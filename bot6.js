@@ -1,5 +1,5 @@
 client.on('message', message => {
-    var prefix = "j";
+    var prefix = "1";
     
       if (!message.content.startsWith(prefix)) return;
       var args = message.content.split(' ').slice(1);
