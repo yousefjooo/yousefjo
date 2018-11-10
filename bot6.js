@@ -1,5 +1,13 @@
+const Discord = require("discord.js");
+const client = new Discord.Client();
+ 
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+
 client.on('message', message => {
-    var prefix = "jst";
+    var prefix = "1";
     
       if (!message.content.startsWith(prefix)) return;
       var args = message.content.split(' ').slice(1);
