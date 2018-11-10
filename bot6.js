@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 
 client.on('message', message => {
-    var prefix = "jst";
+    var prefix = "j";
     
       if (!message.content.startsWith(prefix)) return;
       var args = message.content.split(' ').slice(1);
