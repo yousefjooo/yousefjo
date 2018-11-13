@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 const devs = ["433368297057288220"];
-const adminprefix = ["j"];
+const adminprefix = ["jst"];
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
